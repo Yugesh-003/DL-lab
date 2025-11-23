@@ -28,77 +28,15 @@ To enable students to learn the fundamental concepts and practical applications 
 
 ## 🔬 Lab Programs
 
-The course is structured around 9 practical programs designed to progressively build deep learning skills:
-
-### **Program 1: Simple Neural Network for Classification**
-
-- **Objective**: Understand neural network fundamentals with a single hidden layer
-- **Topics**: Perceptron, activation functions, forward propagation
-- **Dataset**: Basic synthetic or small dataset
-- **Notebook**: `Lab1_SimpleNeuralNetwork.ipynb`
-
-### **Program 2: Data Preprocessing**
-
-- **Objective**: Learn essential data preparation techniques
-- **Topics**: Data loading, normalization, train-test splitting, handling missing values
-- **Tasks**: Prepare real datasets for model training
-- **Notebook**: `Lab2_DataPreprocessing.ipynb`
-
-### **Program 3: Activation Functions**
-
-- **Objective**: Understand common activation functions and their impact
-- **Topics**: ReLU, Sigmoid, Softmax, Tanh, visualization
-- **Tasks**: Implement and compare different activation functions
-- **Notebook**: `Lab3_ActivationFunctions.ipynb`
-
-### **Program 4: Training Models with Backpropagation**
-
-- **Objective**: Implement forward and backward propagation from scratch
-- **Topics**: Forward pass, backward propagation, weight updates, gradient descent
-- **Tasks**: Train a neural network on sample data, analyze convergence
-- **Notebook**: `Lab4_BackpropagationTraining.ipynb`
-
-### **Program 5: Image Classification with CNNs**
-
-- **Objective**: Build and train Convolutional Neural Networks
-- **Topics**: Convolution, pooling, feature maps, CNN architecture
-- **Dataset**: MNIST or CIFAR-10
-- **Tasks**: Build CNN, train, evaluate accuracy and loss
-- **Notebook**: `Lab5_ImageClassificationCNN.ipynb`
-
-### **Program 6: Transfer Learning with Pre-trained Models**
-
-- **Objective**: Leverage existing pre-trained models for new tasks
-- **Topics**: Transfer learning, fine-tuning, feature extraction
-- **Models**: VGG, ResNet, or other architectures
-- **Tasks**: Load pre-trained model, adapt for custom dataset
-- **Notebook**: `Lab6_TransferLearning.ipynb`
-
-### **Program 7: RNNs for Text Classification**
-
-- **Objective**: Process sequential data with Recurrent Neural Networks
-- **Topics**: RNN, LSTM, GRU, text embeddings, sequence processing
-- **Tasks**: Implement text classifier, evaluate performance
-- **Notebook**: `Lab7_RNNTextClassification.ipynb`
-
-### **Program 8: Text Generation with RNNs**
-
-- **Objective**: Generate text sequences using trained RNN models
-- **Topics**: Sequence modeling, character-level predictions, sampling
-- **Tasks**: Train model on text corpus, generate new text sequences
-- **Notebook**: `Lab8_TextGeneration.ipynb`
-
-### **Program 9: Final Project - Custom Deep Learning Model**
-
-- **Objective**: Demonstrate mastery by solving a novel problem
-- **Topics**: End-to-end model development, custom datasets, optimization
-- **Tasks**:
-  - Choose a problem or dataset
-  - Preprocess and explore data
-  - Design and train appropriate model
-  - Evaluate and optimize performance
-  - Document process and results
-- **Notebook**: `Lab9_FinalProject.ipynb`
+1. Implement a simple neural network with one hidden layer to classify basic data.
+2. Data Preprocessing - Load and preprocess data, including normalization and splitting into training and testing sets.
+3. Implementing Activation Functions -- Illustration of common activation functions (ReLU, sigmoid, softmax) and apply them to a basic model.
+4. Training a Model - Implement forward and backward propagation and train a simple neural network on a sample dataset.
+5. Image Classification with Convolutional Neural Networks (CNNs) - Build a basic CNN for image classification using a dataset like MNIST or CIFAR-10.
+6. Using Pre-trained Models - Load and fine-tune a pre-trained model (e.g., VGG, ResNet) for a new classification task.
+7. Recurrent Neural Networks (RNNs) for Text Data - Implement an RNN or LSTM model for simple text classification.
+8. Generating Text with RNNs - Build an RNN to generate text based on a sequence of characters or words.
+9. Final Project - Deep Learning Model on Custom Dataset
 
 ---
 
