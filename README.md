@@ -1,55 +1,72 @@
 # DL-lab
 
-A comprehensive collection of Jupyter notebooks for deep learning coursework, assignments, and lab exercises covering fundamental to advanced deep learning concepts and implementations.
+Deep Learning Lab course for II B.Sc Computer Science (Data Science and Analytics), Semester IV. This repository contains practical lab assignments and Jupyter notebooks implementing core deep learning concepts using TensorFlow and Keras.
 
-## 📋 Table of Contents
+---
 
-- [About](#about)
-- [Course Information](#course-information)
+## 📋 Course Information
+
+| Detail | Information |
+|--------|-------------|
+| **Course Code** | 24DCS404 P |
+| **Semester** | IV |
+| **Batch** | 2024-2027 |
+| **Part** | III (Core Practical) |
+| **Credits** | 3 |
+| **Hours/Week** | 4 |
+| **Total Hours** | 60 |
+| **CIA Marks** | 40 |
+| **End Semester Marks** | 60 |
+
+---
+
+## 🎯 Course Objective
+
+To enable students to learn the fundamental concepts and practical applications of deep learning, including the design, implementation, training, and evaluation of neural networks using modern deep learning frameworks like TensorFlow and Keras.
+
+---
+
+## 📚 Table of Contents
+
+- [Course Outcomes](#course-outcomes)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Lab Structure](#lab-structure)
-- [Notebooks Overview](#notebooks-overview)
+- [Lab Programs](#lab-programs)
 - [Getting Started](#getting-started)
+- [Lab Structure](#lab-structure)
 - [Submission Guidelines](#submission-guidelines)
+- [Grading](#grading)
 - [Resources](#resources)
+- [Academic Integrity](#academic-integrity)
 
-## About
+---
 
-**DL-lab** is a repository containing lab assignments and notebooks for deep learning coursework. This collection includes hands-on exercises, implementations, and experiments designed to reinforce theoretical concepts taught in the deep learning course.
+## ✅ Course Outcomes
 
-### What's Included
+After completing this course, students will be able to:
 
-- Lab assignment notebooks with structured exercises
-- Code implementation assignments
-- Jupyter notebooks for practical experimentation
-- Dataset handling and preprocessing tutorials
-- Model training and evaluation exercises
-- Performance analysis and visualization tasks
+1. **Build a Perceptron model** - Understand and implement the basic building block of neural networks
+2. **Build Neural Network models using BP algorithm** - Implement backpropagation and train networks
+3. **Finetune Deep Learning models for performance optimization** - Optimize model architectures and hyperparameters
+4. **Use TensorFlow to build prediction models** - Leverage industry-standard frameworks for deep learning
+5. **Build, Compile, Test, and evaluate models in Keras** - Use high-level APIs for rapid model development
 
-## Course Information
+---
 
-This repository contains coursework for **Deep Learning Lab** course. Each notebook corresponds to specific lab sessions and assignments focused on building practical deep learning skills.
+## 📋 Prerequisites
 
-### Course Objectives
+Before starting this lab course, ensure you have knowledge of:
 
-- Understand and implement fundamental deep learning algorithms
-- Gain practical experience with deep learning frameworks
-- Learn data preprocessing and model evaluation techniques
-- Explore various neural network architectures
-- Develop problem-solving skills through hands-on coding
+- **Python Programming** (essential) - Variables, functions, loops, libraries
+- **Data Structures** - Lists, dictionaries, arrays
+- **Linear Algebra** - Matrices, vectors, matrix operations
+- **Calculus** - Derivatives, gradients, chain rule
+- **Probability & Statistics** - Distributions, mean, variance
+- **Machine Learning Basics** (recommended) - Classification, regression, evaluation metrics
 
-## Prerequisites
+---
 
-Before starting this course, ensure you have knowledge of:
-
-- **Python Programming** (essential)
-- **Linear Algebra** (matrices, vectors)
-- **Probability and Statistics** (basic concepts)
-- **Calculus** (derivatives, gradients)
-- **Machine Learning Basics** (recommended)
-
-## Installation
+## 💻 Installation
 
 ### 1. Clone the Repository
 
@@ -60,246 +77,417 @@ cd DL-lab
 
 ### 2. Set Up Python Environment
 
+#### Using Conda (Recommended)
 ```bash
-# Using Anaconda (recommended)
 conda create -n dl-lab python=3.9
 conda activate dl-lab
-
-# Or using venv
-python -m venv dl-lab
-source dl-lab/bin/activate  # On Windows: dl-lab\Scripts\activate
 ```
 
-### 3. Install Required Packages
+#### Using venv
+```bash
+python -m venv dl-lab
+source dl-lab/bin/activate    # On macOS/Linux
+# or
+dl-lab\Scripts\activate        # On Windows
+```
+
+### 3. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Required packages include:
-- `jupyter` - Notebook environment
-- `numpy` - Numerical computing
-- `pandas` - Data manipulation
-- `matplotlib` - Data visualization
-- `scikit-learn` - Machine learning utilities
-- `tensorflow` or `pytorch` - Deep learning frameworks
+### 4. Launch Jupyter
 
-## Lab Structure
-
-Each lab notebook follows a standard structure:
-
-```
-Lab [N] - [Topic Name]
-├── Objective(s) - What you'll learn
-├── Theory - Conceptual background
-├── Implementation - Code to write/complete
-├── Experiment(s) - Exercises and tasks
-├── Results - Analysis and observations
-└── Questions - Reflection and understanding checks
+```bash
+jupyter notebook
+# or for JupyterLab
+jupyter lab
 ```
 
-## Notebooks Overview
+---
 
-Add your lab assignments below:
+## 🔬 Lab Programs
 
-| Lab # | Topic | Notebook | Status |
-|-------|-------|----------|--------|
-| 1 | [Add topic] | `lab1.ipynb` | - |
-| 2 | [Add topic] | `lab2.ipynb` | - |
-| 3 | [Add topic] | `lab3.ipynb` | - |
-| 4 | [Add topic] | `lab4.ipynb` | - |
+The course is structured around 9 practical programs designed to progressively build deep learning skills:
 
-*Note: Update with your actual lab topics and notebook names*
+### **Program 1: Simple Neural Network for Classification**
+- **Objective**: Understand neural network fundamentals with a single hidden layer
+- **Topics**: Perceptron, activation functions, forward propagation
+- **Dataset**: Basic synthetic or small dataset
+- **Notebook**: `Lab1_SimpleNeuralNetwork.ipynb`
 
-## Getting Started
+### **Program 2: Data Preprocessing**
+- **Objective**: Learn essential data preparation techniques
+- **Topics**: Data loading, normalization, train-test splitting, handling missing values
+- **Tasks**: Prepare real datasets for model training
+- **Notebook**: `Lab2_DataPreprocessing.ipynb`
+
+### **Program 3: Activation Functions**
+- **Objective**: Understand common activation functions and their impact
+- **Topics**: ReLU, Sigmoid, Softmax, Tanh, visualization
+- **Tasks**: Implement and compare different activation functions
+- **Notebook**: `Lab3_ActivationFunctions.ipynb`
+
+### **Program 4: Training Models with Backpropagation**
+- **Objective**: Implement forward and backward propagation from scratch
+- **Topics**: Forward pass, backward propagation, weight updates, gradient descent
+- **Tasks**: Train a neural network on sample data, analyze convergence
+- **Notebook**: `Lab4_BackpropagationTraining.ipynb`
+
+### **Program 5: Image Classification with CNNs**
+- **Objective**: Build and train Convolutional Neural Networks
+- **Topics**: Convolution, pooling, feature maps, CNN architecture
+- **Dataset**: MNIST or CIFAR-10
+- **Tasks**: Build CNN, train, evaluate accuracy and loss
+- **Notebook**: `Lab5_ImageClassificationCNN.ipynb`
+
+### **Program 6: Transfer Learning with Pre-trained Models**
+- **Objective**: Leverage existing pre-trained models for new tasks
+- **Topics**: Transfer learning, fine-tuning, feature extraction
+- **Models**: VGG, ResNet, or other architectures
+- **Tasks**: Load pre-trained model, adapt for custom dataset
+- **Notebook**: `Lab6_TransferLearning.ipynb`
+
+### **Program 7: RNNs for Text Classification**
+- **Objective**: Process sequential data with Recurrent Neural Networks
+- **Topics**: RNN, LSTM, GRU, text embeddings, sequence processing
+- **Tasks**: Implement text classifier, evaluate performance
+- **Notebook**: `Lab7_RNNTextClassification.ipynb`
+
+### **Program 8: Text Generation with RNNs**
+- **Objective**: Generate text sequences using trained RNN models
+- **Topics**: Sequence modeling, character-level predictions, sampling
+- **Tasks**: Train model on text corpus, generate new text sequences
+- **Notebook**: `Lab8_TextGeneration.ipynb`
+
+### **Program 9: Final Project - Custom Deep Learning Model**
+- **Objective**: Demonstrate mastery by solving a novel problem
+- **Topics**: End-to-end model development, custom datasets, optimization
+- **Tasks**: 
+  - Choose a problem or dataset
+  - Preprocess and explore data
+  - Design and train appropriate model
+  - Evaluate and optimize performance
+  - Document process and results
+- **Notebook**: `Lab9_FinalProject.ipynb`
+
+---
+
+## 🚀 Getting Started
 
 ### Running Your First Lab
 
 1. **Start Jupyter:**
-
 ```bash
 jupyter notebook
 ```
 
-2. **Open the first lab notebook** from the Jupyter file browser
+2. **Navigate to the Lab1 notebook** and open `Lab1_SimpleNeuralNetwork.ipynb`
 
-3. **Follow the notebook structure:**
-   - Read the objective and theory sections
-   - Complete coding tasks in designated cells
-   - Run all cells sequentially (top to bottom)
-   - Document your observations and results
+3. **Follow this workflow for each lab:**
+   - Read the lab objectives
+   - Review the theory and background
+   - Study the example code
+   - Complete the implementation tasks
+   - Run experiments with different parameters
+   - Document your observations
+   - Answer reflection questions
 
-### Tips for Lab Work
+### Tips for Success
 
-- **Read all instructions** before writing code
-- **Execute cells sequentially** - don't skip or jump around
-- **Run each cell individually** and verify output before moving to the next
-- **Document your work** - add comments explaining your code
-- **Save frequently** - use `Ctrl+S` or `Cmd+S`
-- **Clear outputs** periodically: `Kernel → Restart & Clear All Output`
-- **Test different parameters** to understand how they affect results
+- **Execute cells sequentially** - Always run cells from top to bottom
+- **Read carefully** - Understand what each section is doing before writing code
+- **Experiment** - Modify parameters to see how they affect results
+- **Document** - Add comments explaining your code and observations
+- **Save often** - Use `Ctrl+S` or `Cmd+S` to save your work
+- **Clear outputs** - Periodically use `Kernel → Restart & Clear All Output`
+- **Use reproducible seeds** - Set random seeds for consistent results
 
-## Completing Assignments
+### Setting Random Seeds for Reproducibility
 
-### Assignment Workflow
+Add this to the beginning of your notebooks:
 
-1. Read the lab notebook objectives and instructions carefully
-2. Complete the theory review section
-3. Implement the required code in the designated cells
-4. Run all experiments and document observations
-5. Answer reflection questions in markdown cells
-6. Verify all cells execute without errors
-7. Save the notebook before submission
-
-### Code Requirements
-
-- **Use clear variable names** that describe what the variable stores
-- **Add comments** explaining complex logic
-- **Follow Python naming conventions** (snake_case for variables)
-- **Avoid hard-coding values** - use variables instead
-- **Test your code** with different inputs
-- **Handle edge cases** appropriately
-
-## Submission Guidelines
-
-### Before Submitting
-
-- Ensure all cells have been executed and show output
-- Check that there are no error messages
-- Review your code for clarity and completeness
-- Verify all answers are written in the notebook
-- Save the file with proper naming convention
-
-### File Naming
-
-Use this format for submitted notebooks:
-```
-YourName_Lab[N]_[TopicName].ipynb
-```
-
-Example: `Yugesh_Lab1_NeuralNetworks.ipynb`
-
-### What to Include
-
-- All completed code cells
-- Clear comments and explanations
-- Experiment results and observations
-- Answers to reflection questions
-- Visualizations and plots
-
-## Troubleshooting
-
-### Common Issues
-
-**Issue: `ModuleNotFoundError: No module named 'tensorflow'` (or other package)**
-- Solution: Install missing package with `pip install tensorflow`
-- Ensure you're in the correct conda/virtual environment
-
-**Issue: Kernel crashes or notebook becomes very slow**
-- Solution: Restart kernel with `Kernel → Restart and Clear All Output`
-- Reduce dataset size or batch size in your code
-- Close other resource-intensive applications
-
-**Issue: Different results each time I run the notebook**
-- Solution: Set random seeds at the beginning:
 ```python
 import numpy as np
 import random
 import tensorflow as tf
 
+# Set seeds for reproducibility
 np.random.seed(42)
 random.seed(42)
 tf.random.set_seed(42)
 ```
 
-**Issue: GPU not being used (if available)**
-- Solution: Check if TensorFlow detects GPU:
-```python
-import tensorflow as tf
-print(tf.config.list_physical_devices('GPU'))
+---
+
+## 📐 Lab Structure
+
+Each lab notebook follows a consistent structure:
+
+```
+Lab [N] - [Topic Name]
+│
+├── Objectives
+│   └── What you'll learn and accomplish
+│
+├── Theory & Background
+│   └── Conceptual foundation and mathematical concepts
+│
+├── Concepts Review
+│   └── Key definitions and formulas
+│
+├── Implementation
+│   ├── Example Code
+│   └── Your Tasks (marked as [TODO])
+│
+├── Experiments
+│   └── Hands-on exercises and parameter exploration
+│
+├── Results & Analysis
+│   └── Document observations and findings
+│
+└── Reflection Questions
+    └── Conceptual questions to reinforce learning
 ```
 
-## Learning Resources
+---
 
-### Recommended Reading
+## 📤 Submission Guidelines
 
+### Before Submitting Your Lab
+
+**Checklist:**
+- ✅ All cells have been executed
+- ✅ No error messages in output
+- ✅ All TODO sections completed
+- ✅ Code includes comments explaining logic
+- ✅ Visualizations and plots are displayed
+- ✅ All reflection questions answered
+- ✅ File saved with correct naming convention
+
+### File Naming Convention
+
+Submit notebooks with this naming format:
+```
+YourName_Lab[N]_[TopicName].ipynb
+```
+
+**Examples:**
+- `Yugesh_Lab1_SimpleNeuralNetwork.ipynb`
+- `Yugesh_Lab5_ImageClassificationCNN.ipynb`
+- `Yugesh_Lab9_FinalProject.ipynb`
+
+### What to Include
+
+Each submitted notebook must contain:
+
+1. **Completed Code** - All implementation tasks finished
+2. **Clear Comments** - Explain what your code does
+3. **Experiment Results** - Output, visualizations, and metrics
+4. **Observations** - What did you learn? What surprised you?
+5. **Answers** - All reflection questions answered thoroughly
+6. **No Errors** - Code runs without exceptions
+
+### Code Quality Standards
+
+- Use **descriptive variable names** that indicate purpose
+- Add **inline comments** for complex logic
+- Follow **PEP 8 style guidelines**
+- **Test your code** with different inputs
+- Avoid **hard-coded values** - use variables instead
+- **Document edge cases** and how you handle them
+
+---
+
+## 📊 Grading
+
+### Continuous Internal Assessment (CIA) - 40 Marks
+
+- **Lab Participation**: 5 marks
+- **Individual Lab Submissions** (8 labs × 4 marks): 32 marks
+- **Lab Conduct & Attendance**: 3 marks
+
+### End Semester Examination - 60 Marks
+
+- **Practical Exam**: Build a model on unseen dataset
+- **Viva Voce**: Questions on concepts and your code
+- **Report**: Document your approach and results
+
+### Lab Evaluation Criteria
+
+| Criteria | Marks |
+|----------|-------|
+| Code Implementation | 2 |
+| Correctness & Output | 1 |
+| Documentation & Comments | 0.5 |
+| Analysis & Reflection | 0.5 |
+
+---
+
+## 🌐 Resources
+
+### Course Materials
+
+- Course lecture slides (provided by instructor)
+- Recommended textbooks and research papers
+- Course discussion forum/forum
+
+### External Learning Resources
+
+#### Deep Learning Foundations
 - **Deep Learning** by Goodfellow, Bengio, and Courville
-- Official TensorFlow/PyTorch documentation
-- Stanford CS231n course notes (Convolutional Neural Networks)
-- Fast.ai practical deep learning courses
+- Stanford CS231n: Convolutional Neural Networks for Visual Recognition
+- Stanford CS224N: Natural Language Processing with Deep Learning
 
-### Helpful Links
+#### Practical Frameworks
+- [TensorFlow Official Documentation](https://www.tensorflow.org/)
+- [Keras API Reference](https://keras.io/)
+- [PyTorch Documentation](https://pytorch.org/) (alternative framework)
 
-- [TensorFlow Documentation](https://www.tensorflow.org/)
-- [PyTorch Documentation](https://pytorch.org/)
-- [NumPy Tutorial](https://numpy.org/doc/stable/user/)
-- [Jupyter Notebook Tips & Tricks](https://www.datacamp.com/community/tutorials/tutorial-jupyter-notebook)
+#### Interactive Learning
+- [Fast.ai Practical Deep Learning](https://www.fast.ai/)
+- [Coursera Deep Learning Specialization](https://www.deeplearning.ai/)
+- [Kaggle Learn Deep Learning Courses](https://www.kaggle.com/learn)
 
-### Getting Help
+#### Jupyter Notebook Tips
+- [Jupyter Notebook Documentation](https://jupyter.org/)
+- [Jupyter Keyboard Shortcuts](https://jupyter-notebook.readthedocs.io/en/stable/notebook.html#keyboard-shortcuts)
 
-- Review course materials and lectures
-- Check notebook comments and documentation
-- Consult assigned readings
-- Discuss with classmates (but write your own code)
-- Ask instructor during office hours or via email
+---
 
-## Academic Integrity
-
-- Write your own code and solutions
-- Cite any external resources or references used
-- Do not copy code from other students
-- Understand what your code does - be able to explain it
-- Report any issues or concerns to your instructor
-
-## Jupyter Notebook Shortcuts
+## ⌨️ Jupyter Keyboard Shortcuts
 
 | Shortcut | Action |
 |----------|--------|
 | `Shift + Enter` | Execute cell and move to next |
-| `Ctrl + Enter` | Execute cell |
+| `Ctrl + Enter` | Execute current cell |
 | `Alt + Enter` | Execute cell and insert new cell below |
-| `A` | Insert cell above (command mode) |
-| `B` | Insert cell below (command mode) |
-| `D, D` | Delete cell (command mode) |
-| `M` | Convert cell to Markdown (command mode) |
-| `Y` | Convert cell to Code (command mode) |
-| `Ctrl + /` | Comment/uncomment lines |
-
-## Environment Management
-
-### Save Your Environment
-
-```bash
-pip freeze > requirements.txt
-```
-
-### Recreate Environment on Another Machine
-
-```bash
-pip install -r requirements.txt
-```
-
-### Update All Packages
-
-```bash
-pip install --upgrade -r requirements.txt
-```
-
-## Important Notes
-
-- Always keep backup copies of your work
-- Don't modify files outside of lab assignments without asking
-- Report any issues with notebooks to your instructor immediately
-- Respect deadlines for lab submissions
-- Academic honesty is essential - write your own solutions
+| `A` | Insert cell above (Command mode) |
+| `B` | Insert cell below (Command mode) |
+| `D, D` | Delete cell (Command mode) |
+| `M` | Convert to Markdown (Command mode) |
+| `Y` | Convert to Code (Command mode) |
+| `Ctrl + /` | Toggle comment |
+| `Ctrl + Z` | Undo |
+| `Ctrl + S` | Save notebook |
 
 ---
 
-## Contact
+## 🔧 Troubleshooting
 
-For questions or issues regarding the labs:
-- Reach out to the course instructor
-- Check the course discussion forum
-- Review course documentation
+### Common Issues & Solutions
 
-**Good luck with your deep learning labs! 📚🧠**
+**"ModuleNotFoundError: No module named 'tensorflow'"**
+```bash
+# Solution: Install TensorFlow
+pip install tensorflow
+# Verify environment is activated
+conda activate dl-lab  # or source dl-lab/bin/activate
+```
+
+**"Kernel keeps crashing or running slow"**
+- Restart kernel: `Kernel → Restart and Clear All Output`
+- Close other resource-intensive applications
+- Reduce batch size or dataset size in your code
+- For large computations, consider using GPU
+
+**"GPU not being detected"**
+```python
+# Check if GPU is available
+import tensorflow as tf
+print(tf.config.list_physical_devices('GPU'))
+```
+
+**"Different results every time I run the code"**
+- Set random seeds at the beginning (see code above)
+- Ensure you're loading the same data each time
+
+**"Notebook file size is too large"**
+- Clear outputs: `Kernel → Restart & Clear All Output`
+- Remove unnecessary visualizations
+- Save checkpoint models separately
+
+---
+
+## 📝 Academic Integrity Policy
+
+### Expectations
+
+- **Write your own code** - Don't copy from classmates or internet
+- **Understand your work** - Be able to explain every line of code
+- **Cite sources** - Reference any external resources or inspiration
+- **Collaborate responsibly** - Discuss concepts but write individual solutions
+- **Report issues** - Notify instructor of technical problems immediately
+
+### Plagiarism Consequences
+
+Violation of academic integrity may result in:
+- Assignment score of zero
+- Failure in the course
+- Disciplinary action as per institute policy
+
+---
+
+## 📞 Getting Help
+
+### Course Support Channels
+
+1. **Instructor Office Hours** - (Provide schedule)
+2. **Lab TA Support** - (Provide timing/email)
+3. **Course Discussion Forum** - (Link provided)
+4. **Email** - (Instructor email)
+
+### Before Asking for Help
+
+- Check course materials and notebook comments
+- Search for similar issues online
+- Review related sections in textbooks
+- Try debugging your code step by step
+
+### When Asking for Help
+
+- **Be specific** - Show the exact error message
+- **Share context** - What were you trying to do?
+- **Show your attempt** - What solutions have you tried?
+- **Be respectful** - Instructors and TAs are here to help!
+
+---
+
+## 📋 Lab Attendance & Submission Dates
+
+| Lab # | Topic | Target Date | Submission Date |
+|-------|-------|-------------|-----------------|
+| 1 | Simple Neural Network | Week 1 | - |
+| 2 | Data Preprocessing | Week 2 | - |
+| 3 | Activation Functions | Week 3 | - |
+| 4 | Backpropagation Training | Week 4 | - |
+| 5 | Image Classification CNN | Week 5 | - |
+| 6 | Transfer Learning | Week 6 | - |
+| 7 | RNN Text Classification | Week 7 | - |
+| 8 | Text Generation | Week 8 | - |
+| 9 | Final Project | Weeks 9-10 | - |
+
+*Note: Exact dates will be communicated by instructor*
+
+---
+
+## 🎓 Final Notes
+
+- **Consistency is key** - Attend labs regularly and complete assignments on time
+- **Learning journey** - Deep learning takes practice; don't get discouraged
+- **Ask questions** - Curiosity drives learning; ask whenever you're confused
+- **Explore further** - Extend labs with your own ideas and experiments
+- **Build a portfolio** - Keep your best work for future opportunities
+
+---
+
+## 📜 Important Links
+
+- **GitHub Repository**: https://github.com/Yugesh-003/DL-lab
+- **Syllabus**: Deep-Learning-Lab-Syllabus.docx
+- **Course Code**: 24DCS404 P
+
+---
+
+**Good luck with your Deep Learning Lab! Work hard, learn deeply, and enjoy the journey! 🚀🧠**
