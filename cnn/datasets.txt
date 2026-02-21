@@ -1,0 +1,3 @@
+All the downloaded datasets on lap, can be found in
+
+C:\Users\Yugesh\tensorflow_datasets
